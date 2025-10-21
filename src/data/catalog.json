@@ -1,0 +1,99 @@
+{
+  "categories": [
+    {
+      "id": "dev",
+      "name": "Development"
+    },
+    {
+      "id": "business",
+      "name": "Business"
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Accounting"
+    },
+    {
+      "id": "it",
+      "name": "IT & Software"
+    },
+    {
+      "id": "productivity",
+      "name": "Office Productivity"
+    },
+    {
+      "id": "personal",
+      "name": "Personal Development"
+    },
+    {
+      "id": "design",
+      "name": "Design"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing"
+    },
+    {
+      "id": "health",
+      "name": "Health & Fitness"
+    },
+    {
+      "id": "music",
+      "name": "Music"
+    }
+  ],
+  "featured": [
+    {
+      "id": "c1",
+      "title": "Azure MLOps V2 Accelerator",
+      "author": "Jitesh K.",
+      "rating": 4.6,
+      "hours": 6.5,
+      "price": 609,
+      "img": "/banner1.png"
+    },
+    {
+      "id": "c2",
+      "title": "Complete Python Pro Bootcamp",
+      "author": "Angela Yu",
+      "rating": 4.7,
+      "hours": 60,
+      "price": 479,
+      "img": "/banner2.png"
+    },
+    {
+      "id": "c3",
+      "title": "Power BI Masterclass 2025",
+      "author": "Manuel Lorenz",
+      "rating": 4.6,
+      "hours": 12,
+      "price": 599,
+      "img": "/banner3.png"
+    }
+  ],
+  "recommended": [
+    {
+      "id": "r1",
+      "title": "DP-100: Azure Data Scientist Associate",
+      "badge": "Premium",
+      "price": 609
+    },
+    {
+      "id": "r2",
+      "title": "Python for Data Science Bootcamp",
+      "badge": "Bestseller",
+      "price": 609
+    },
+    {
+      "id": "r3",
+      "title": "Azure ML Complete 2025 Edition",
+      "badge": "Premium",
+      "price": 489
+    },
+    {
+      "id": "r4",
+      "title": "100 Days of Code: Python",
+      "badge": "Bestseller",
+      "price": 479
+    }
+  ]
+}
