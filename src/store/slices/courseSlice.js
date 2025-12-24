@@ -86,7 +86,7 @@ export const fetchLessons = createAsyncThunk('lessons/list', async ({ courseId, 
   }
 })
 
-export const saveLesson = createAsyncThunk(
+export const saveLessonssss = createAsyncThunk(
   'lessons/save',
   async ({ courseId, sectionId, ...data }, { rejectWithValue }) => {
     try {
@@ -97,6 +97,23 @@ export const saveLesson = createAsyncThunk(
     }
   }
 )
+
+// thunk: send the whole payload in body (no URL params)
+export const saveLesson = createAsyncThunk(
+  'lessons/save',
+  async (payload, { rejectWithValue }) => {
+    try {
+      // payload = { id?, courseId, sectionId, title, ... }
+      if (payload.id) {
+        return await api.updateLesson(payload); // PUT with body only
+      }
+      return await api.createLesson(payload);   // POST with body only
+    } catch (e) {
+      return rejectWithValue(e.data || { message: e.message });
+    }
+  }
+);
+
 
 export const deleteLesson = createAsyncThunk(
   'lessons/delete',

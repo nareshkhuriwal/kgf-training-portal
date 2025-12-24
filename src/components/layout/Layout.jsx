@@ -11,11 +11,13 @@ export default function Layout({ children }) {
   const [collapsed, setCollapsed] = useState(false);
 
   // show sidebar only on /admin or /instructor routes (and only if logged in)
-  const showSidebar = useMemo(() => {
+  const showSidebar1 = useMemo(() => {
     const isBackoffice =
       pathname.startsWith("/admin") || pathname.startsWith("/instructor");
     return !!user?.token && isBackoffice;
   }, [pathname, user?.token]);
+
+  const showSidebar = true;
 
   const role = user?.role || "instructor"; // default when role not loaded yet
 

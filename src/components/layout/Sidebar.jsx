@@ -5,6 +5,8 @@ import { getMenusForRole } from "./Menus";
 
 export default function Sidebar({ role = "instructor", collapsed = false }) {
   const menu = useMemo(() => getMenusForRole(role), [role]);
+
+  console.log("Sidebar menu for role", role, menu);
   return (
     <aside
       className={`h-[calc(100vh-56px)] border-r bg-white ${collapsed ? "w-16" : "w-72"} transition-all`}
@@ -23,7 +25,7 @@ export default function Sidebar({ role = "instructor", collapsed = false }) {
 }
 
 function Group({ item, collapsed }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const Icon = item.icon;
   return (
     <div className="mb-1">

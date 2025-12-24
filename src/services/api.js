@@ -92,7 +92,7 @@ export const api = {
   // Lessons (nested under course + section)
   listLessons:     (courseId, sectionId)                 => request(`/api/courses/${courseId}/sections/${sectionId}/lessons`),
   getLesson:       (courseId, sectionId, id)             => request(`/api/courses/${courseId}/sections/${sectionId}/lessons/${id}`),
-  createLesson:    (courseId, sectionId, body)           => request(`/api/courses/${courseId}/sections/${sectionId}/lessons`, { method: 'POST', body }),
+  createLesson:    (body)           => request(`/api/lessons`, { method: 'POST', body }),
   updateLesson:    (courseId, sectionId, id, body)       => request(`/api/courses/${courseId}/sections/${sectionId}/lessons/${id}`, { method: 'PUT', body }),
   deleteLesson:    (courseId, sectionId, id)             => request(`/api/courses/${courseId}/sections/${sectionId}/lessons/${id}`, { method: 'DELETE' }),
 };

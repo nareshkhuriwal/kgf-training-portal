@@ -1,5 +1,5 @@
 // src/pages/admin/Categories.jsx
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import DataTable from "../../components/ui/DataTable.jsx";
 import DrawerModal from "../../components/ui/DrawerModal.jsx";

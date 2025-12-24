@@ -15,6 +15,8 @@ import AdminCatalog from "./pages/admin/Catalog.jsx";
 import AdminCourses from "./pages/admin/Courses.jsx";
 import InstructorCourses from "./pages/instructor/Courses.jsx";
 import CourseEditor from "./pages/shared/CourseEditor.jsx";
+import { Demo } from './pages/Demo.jsx'
+
 
 
 export default function App() {
@@ -25,6 +27,7 @@ export default function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path='/demo' element={<Demo />} />
 
         <Route path="/course/:id" element={<Course />} />
         <Route path="/catalog/:id" element={<Catalog />} />

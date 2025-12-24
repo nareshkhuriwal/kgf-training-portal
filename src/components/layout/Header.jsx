@@ -19,11 +19,11 @@ export default function Header() {
   const [q, setQ] = useState("");
 
   // If we have a token but no user details yet, hydrate from /auth/me
-  useEffect(() => {
-    if (user?.token && !user?.name && !user?.loading) {
-      dispatch(fetchMe());
-    }
-  }, [user?.token, user?.name, user?.loading, dispatch]);
+  // useEffect(() => {
+  //   if (user?.token && !user?.name && !user?.loading) {
+  //     dispatch(fetchMe());
+  //   }
+  // }, [user?.token, user?.name, user?.loading, dispatch]);
 
   const submit = (e) => {
     e.preventDefault();
